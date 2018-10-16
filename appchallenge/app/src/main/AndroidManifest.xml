@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.namankhurpia.appchallenge">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.demoapp.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/freshchat_file_provider_paths" />
+        </provider>
+
+        <activity android:name=".homescreen" />
+        <activity android:name=".chatactivity" />
+        <activity android:name=".selectveggie" />
+        <activity android:name=".billing" />
+        <activity android:name=".payment" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LogActivity" />
+        <activity android:name=".SolutionsActivity" />
+        <activity android:name=".profiletab" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
